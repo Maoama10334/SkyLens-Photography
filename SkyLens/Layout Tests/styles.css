@@ -1,20 +1,19 @@
 .gallery-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
 }
 
-.grid {
-    margin: 5px;
-    width: calc(33% - 10px);
-    display: flex;
-    flex-direction: column;
-}
-
-.grid img {
+.gallery-wrapper img {
     width: 100%;
     height: auto;
-    margin-bottom: 5px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    .gallery-wrapper {
+        grid-template-columns: 1fr; /* Stack images on smaller screens */
+    }
 }
