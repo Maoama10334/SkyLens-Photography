@@ -1,0 +1,20 @@
+.gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.grid {
+    margin: 5px;
+    width: calc(33% - 10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
