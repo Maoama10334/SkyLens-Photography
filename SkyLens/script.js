@@ -1,4 +1,3 @@
-// Array of image file names (you could also generate this list with a server-side script or by reading a directory if using Node.js)
 const imageFilenames = [
     '1.jpg',
     '2.jpg',
@@ -14,8 +13,6 @@ const imageFilenames = [
     '12.jpg',
     '13.jpg',
     '14.jpg',
-
-    // ...add all image filenames here
 ];
 
 // Function to load images
@@ -42,7 +39,7 @@ window.onload = () => {
     images.forEach(img => {
         img.addEventListener('click', () => {
             modal.style.display = "block";
-            modalImg.src = img.src; // Assuming you want to show the same image; replace with high-res image if necessary
+            modalImg.src = img.src; 
             captionText.innerHTML = img.alt;
         });
     });
