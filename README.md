@@ -39,7 +39,7 @@ No additional setup is required! The website should now be running locally on yo
 
 - Browse the homepage to view the latest uploads.
 - Switch between different tabs of cinematography/general photography. **(To be implemented)**
-- Store images/videos locally within a MongoDB Collection.
+- Store images/videos locally within a MongoDB Collection. **(To be implemented)**
 
  **For admins:**
 
