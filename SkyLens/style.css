@@ -154,10 +154,6 @@ html {
     text-decoration: none;
     cursor: pointer;
   }
-
-
-  
-  /* Retain other styles and ensure you have responsive breakpoints */
   
 @keyframes fadeIn {
     from { opacity: 0; }
