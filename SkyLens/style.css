@@ -90,26 +90,28 @@ html {
   }
 
   /* Style for the modal/lightbox */
-.modal {
-    display:flex;
+  .modal {
+    display: flex;
     position: fixed;
     z-index: 1000;
-    padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow:auto;
-    background-color: rgb(0,0,0);
+    overflow: auto;
     background-color: rgba(0,0,0,0.9);
-  }
-  
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 100%;
-    max-width: 500px;
-  }
+    align-items: flex-start; /* This will align the modal content at the top */
+    justify-content: center; /* This will horizontally center the modal content */
+}
+
+.modal-content {
+  display: block;
+  max-width: 90%; /* This will ensure the image is not too big */
+  max-height: 80%; /* This will ensure the image is not too big */
+  object-fit: contain; /* This will ensure the image maintains its aspect ratio */
+  margin: auto;
+  padding-top: 5%; /* This will adjust the vertical position of the modal content */
+}
 
   /* Responsive adjustments for gallery */
 @media (max-width: 400px) {
